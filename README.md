@@ -1,5 +1,11 @@
 # OpenAni
 
+看到Grok4的AI伙伴功能，感觉不错，但是很多人用安卓或者没有会员用不到，于是想自己实现一个，项目有几个特点：
+- 基于Live2D实现
+- 免費API，通过语音交互
+- 不需要后端，作为浏览器插件导入即可使用
+- 视频通话功能（免费API过于慢了，目前已屏蔽，想用的可以自己搜一下startCamera去掉注释即可)
+
 ![](https://forthebadge.com/images/badges/built-with-love.svg)
 ![](https://forthebadge.com/images/badges/uses-html.svg)
 ![](https://forthebadge.com/images/badges/made-with-javascript.svg)
