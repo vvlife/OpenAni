@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "OpenAni",
+  "version": "1.0",
+  "description": "OpenSource Grok Companion Ani",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["waifu-tips.js","live2d.min.js"],
+      "css": ["waifu.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "*.js",
+        "*.css",
+        "*.json",
+        "live2d.min.js",
+        "waifu-tips.js",
+        "waifu-tips.json",
+        "assets/*"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
