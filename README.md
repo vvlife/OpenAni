@@ -4,7 +4,7 @@
 - 基于Live2D实现
 - 免費API，通过语音交互
 - 不需要后端，作为浏览器插件导入即可使用
-- 视频通话功能（免费API过于慢了，目前已屏蔽，想用的可以自己搜一下startCamera去掉注释即可)
+- 视频通话功能（免费API过于慢了，目前已屏蔽，想用的可以自己搜一下startCamera去掉注释再编译即可)
 
 ![](https://forthebadge.com/images/badges/built-with-love.svg)
 ![](https://forthebadge.com/images/badges/uses-html.svg)
@@ -43,6 +43,12 @@ live2d-widget: 可交互式Live2D网页看板娘插件
 ollama: 使用大型语言模型开始您的旅程
 
 ## 更多
+
+二次开发编译命令：
+```
+npm install
+npm run build
+```
 
 更多内容可以参考：  
 https://www.dongaigc.com/p/stevenjoezhang/live2d-widget
