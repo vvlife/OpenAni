@@ -19,6 +19,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
             sendResponse({status: 'not found'});
         }
     } else if (request.action === 'updateApiKey') {
+        console.log("updating api key")
         // 向页面内的Live2D组件发送API密钥更新消息
         window.postMessage({
             type: 'UPDATE_API_KEY',

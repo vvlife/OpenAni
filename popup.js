@@ -22,11 +22,6 @@ function loadApiKey() {
     });
 }
 
-// 保存自动显示设置
-document.getElementById('autoShow').addEventListener('change', (e) => {
-    chrome.storage.local.set({autoShow: e.target.checked});
-});
-
 // 保存API密钥
 document.getElementById('saveApiKey').addEventListener('click', () => {
     const apiKey = document.getElementById('apiKeyInput').value.trim();
